@@ -1,8 +1,7 @@
 "use client";
 
-import React, { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-import { Mail, Phone, Landmark } from "lucide-react";
+import React from "react";
+import { Mail, Phone } from "lucide-react";
 import AnimatedLogoBg from "@/components/AnimatedLogoBg";
 import ContactForm from "@/components/ContactForm";
 
@@ -22,9 +21,7 @@ const InstagramIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
   </svg>
 );
 
-function ContactPageContent() {
-  const searchParams = useSearchParams();
-  const industryParam = searchParams.get("industry") || "";
+export default function Contact() {
 
   return (
     <div className="relative min-h-screen pb-20">
@@ -137,14 +134,4 @@ function ContactPageContent() {
   );
 }
 
-export default function Contact() {
-  return (
-    <Suspense fallback={
-      <div className="min-h-screen flex items-center justify-center bg-[#F8F8F5]">
-        <div className="font-serif text-lg text-[#5B665E] animate-pulse">Loading Contact Form...</div>
-      </div>
-    }>
-      <ContactPageContent />
-    </Suspense>
-  );
-}
+

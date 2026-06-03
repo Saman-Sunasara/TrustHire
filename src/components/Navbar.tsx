@@ -33,10 +33,7 @@ export const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+
 
   return (
     <>
@@ -134,6 +131,7 @@ export const Navbar: React.FC = () => {
                   >
                     <Link
                       href={link.href}
+                      onClick={() => setIsOpen(false)}
                       className={`text-2xl font-serif tracking-wide block transition-colors ${
                         isActive ? "text-[#C8A96B]" : "text-[#1F2A22] hover:text-[#C8A96B]"
                       }`}
@@ -161,6 +159,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/contact"
+                onClick={() => setIsOpen(false)}
                 className="w-full text-center bg-[#1F2A22] text-[#F8F8F5] hover:bg-[#C8A96B] transition-all duration-300 py-3 text-sm font-semibold uppercase tracking-widest"
               >
                 Book A Demo
