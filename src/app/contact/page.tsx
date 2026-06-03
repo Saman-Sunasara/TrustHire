@@ -104,7 +104,7 @@ export default function Contact() {
                 <span className="text-[9px] uppercase tracking-widest font-bold text-[#5B665E]">Social Identity</span>
                 <div className="flex items-center gap-4">
                   <a
-                    href="https://www.linkedin.com/in/saman-sunasara-59072228b/"
+                    href="https://www.linkedin.com/company/grevoo/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-8 h-8 rounded-full border border-[#E5E5DF] flex items-center justify-center text-[#5B665E] hover:text-[#C8A96B] hover:border-[#C8A96B] transition-all"
@@ -112,7 +112,7 @@ export default function Contact() {
                     <LinkedinIcon className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://www.instagram.com/_sxmann._/"
+                    href="https://www.instagram.com/grevoo.in/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-8 h-8 rounded-full border border-[#E5E5DF] flex items-center justify-center text-[#5B665E] hover:text-[#C8A96B] hover:border-[#C8A96B] transition-all"

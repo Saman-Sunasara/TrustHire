@@ -71,7 +71,7 @@ export const Footer: React.FC = () => {
             {/* Social Icons */}
             <div className="flex items-center gap-4 mt-2">
               <a
-                href="https://www.linkedin.com/in/saman-sunasara-59072228b/"
+                href="https://www.linkedin.com/company/grevoo/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-[#5B665E]/30 flex items-center justify-center text-[#5B665E] hover:text-[#C8A96B] hover:border-[#C8A96B] transition-all"
@@ -80,7 +80,7 @@ export const Footer: React.FC = () => {
                 <LinkedinIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://www.instagram.com/_sxmann._/"
+                href="https://www.instagram.com/grevoo.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-full border border-[#5B665E]/30 flex items-center justify-center text-[#5B665E] hover:text-[#C8A96B] hover:border-[#C8A96B] transition-all"
